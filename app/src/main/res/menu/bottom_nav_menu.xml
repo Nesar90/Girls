@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_hair"
+        android:icon="@drawable/hair_icon"
+        android:title="@string/hair" />
+
+    <item
+        android:id="@+id/item_makeup"
+        android:icon="@drawable/makeup_icon"
+        android:title="@string/makeup"/>
+
+    <item
+        android:id="@+id/item_nail"
+        android:icon="@drawable/nail_icon"
+        android:title="@string/nail"
+        />
+
+
+</menu>

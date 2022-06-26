@@ -61,11 +61,12 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicVH> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, MusicActivity.class);
-
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("audio" , content);
-                intent.putExtra("number" , contentList.size());
-                intent.putExtra("count" , counter);
-
+                intent.putExtra("musicUri" , content.getContentUrl());
+                intent.putExtra("fileName" , content.getContentTitle());
+                //intent.putExtra("number" , contentList.size());
+                //intent.putExtra("count" , counter);
                 context.startActivity(intent);
             }
         });
